@@ -1,3 +1,10 @@
 .idea/
 __pycache__/
-LabletAnomaly.egg-info/
+
+*.egg-info/
+.venv
+build
+
+datasets/*
+!datasets/.keep
+evaluated_results

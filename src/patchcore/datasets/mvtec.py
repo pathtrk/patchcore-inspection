@@ -70,6 +70,8 @@ class MVTecDataset(torch.utils.data.Dataset):
         self.train_val_split = train_val_split
 
         self.imgpaths_per_class, self.data_to_iterate = self.get_image_data()
+        self.transform_std = IMAGENET_STD
+        self.transform_mean = IMAGENET_MEAN
 
         self.transform_img = [
             transforms.Resize(resize),
